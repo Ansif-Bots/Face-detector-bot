@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: face-crop-telebot
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 8019349052:AAGaA9s-iEtrChuiplEJjBSedJuJ0OXgtJM
